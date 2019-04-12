@@ -5,7 +5,8 @@ import './global.css';
 import * as serviceWorker from './serviceWorker';
 
 //import Badge from './components/Badge';
-import BadgePage from './pages/BadgePage';
+//import BadgePage from './pages/BadgePage';
+import Badges from './pages/Badges';
 
 const element = (
 	<div>
@@ -16,7 +17,7 @@ const element = (
 
 
 ReactDOM.render(
-	<BadgePage /> , document.getElementById('root'));
+	<Badges /> , document.getElementById('root'));
 	
 	
 /*
