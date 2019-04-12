@@ -1,11 +1,24 @@
 import React from 'react';
 
+import './styles/BadgeItem.css'
+
 const BadgeItem = ( props ) => {
 	return (
 		
-		<li key={props.item.id}>
-			<p>{props.item.firstName}</p>
-		</li>
+		<div className="container Badge_Item">
+			<div className="row">
+				<div className="col-2">
+					<img src={props.item.avatarUrl} />
+				</div>
+				<div className="col-6">
+					<p style={{
+						marginBottom: 0
+					}}>{props.item.firstName} {props.item.lastName}</p>
+						<a href={`https://twitter.com/${props.item.twitter}`}> @{ props.item.twitter } </a>
+					<p> { props.item.jobTitle } </p>
+				</div>
+			</div>
+		</div>
 		
 	)
 }

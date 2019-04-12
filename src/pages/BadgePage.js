@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import 'bootstrap/dist/css/bootstrap.css';
-
 import Navbar from '../components/Navbar';
 
 import Badge from '../components/Badge';

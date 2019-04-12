@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Navbar from '../components/Navbar';
-import BadgeItem from '../components/BadgeItem';
+import BadgesLayout from '../components/BadgesLayout';
 
 import './styles/Badges.css';
 
@@ -64,15 +64,8 @@ class Badges extends Component {
 								</a>
 							</div>
 			
-							<div className="Badges__list">
-								<div className="Badges__container">
-									<ul className="list-unstyled">
-										{ 
-											this.state.data.map ( item => <BadgeItem item={item}/> ) 
-										}
-									</ul>
-								</div>
-							</div>
+			
+							<BadgesLayout badges={this.state.data} />
 			
 					</div>
 				</div>
